@@ -1,0 +1,58 @@
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #1d1d1d;
+}
+.menu{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #ff3300;
+    display: flex;
+}
+.menu li{
+    position: relative;
+}
+
+.menu li a{
+    display: block;
+    padding: 15px 20px;
+    color: #fff;
+    text-decoration: none;
+}
+.menu li:hover a{
+    background-color: #cc2900;
+}
+
+.submenu{
+    list-style: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    display: none;
+    background-color: #ff3300;
+    min-width: 150px;
+}
+
+.menu li:hover .submenu{
+    display: block;
+}
+
+.submenu li{
+    position: relative;
+}
+.submenu li a{
+    display: block;
+    padding: 12px 15px;
+    color: #fff;
+    text-decoration: none;
+}
+.submenu li a:hover{
+    background-color: #000;
+}
+.submenu .submenu{
+    left: 100%;
+    top: 0;
+}
